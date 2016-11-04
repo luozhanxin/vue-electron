@@ -1,3 +1,4 @@
+//开发环境
 'use strict';
 const electron = require('electron');
 const app = electron.app;  // 控制App生命周期的模块

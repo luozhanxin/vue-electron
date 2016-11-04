@@ -1,12 +1,11 @@
+//生产环境
 'use strict'
 const electron = require('electron');
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 var path = require("path");
 var childProcess = require('child_process');
-
 var mainWindow = null;
-
 app.on('window-all-closed', function () {
   if (process.platform !== 'darwin') {
     app.quit();
@@ -14,7 +13,7 @@ app.on('window-all-closed', function () {
 });
 
 app.on('ready', function () {
-  mainWindow = new BrowserWindow({ width: 1000, height: 800, resizable: false, title: '知乎专栏' });
+  mainWindow = new BrowserWindow({ width: 1000, height: 800, resizable: false});
   mainWindow.loadURL('file://' + __dirname + '/dist/index.html');
   console.log(path.resolve(path.dirname(process.execPath)));
   mainWindow.on('closed', function () {
