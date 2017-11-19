@@ -1,7 +1,7 @@
 # electron-boilerplate-vue
 Comprehensive boilerplate application for Electron runtime and Vue.js. 
 # Quick start 
-    git clone https://github.com/phpIT/vue-electron.git
+    git clone https://github.com/luozhanxin/vue-electron.git
     cd vue-electron
     npm install && npm startdev
 .. and boom! You have running desktop application on your screen.
